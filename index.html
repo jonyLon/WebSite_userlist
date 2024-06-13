@@ -1,23 +1,44 @@
 ﻿<!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <title>Розетка</title>
     <link href="/css/bootstrap.min.css" rel="stylesheet" />
     <link href="css/site.css" rel="stylesheet" />
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWgY9-T6vn1hDVmtAU4D7qgoqNChMjKmU"></script>
     <script src="/js/header.js"></script>
 </head>
+
 <body>
-<script> loadDOM("_header.html"); </script>
+    <script> loadDOM("_header.html"); </script>
     <div class="container">
         <h1>Привіт козаки++</h1>
-        <input class="btn btn-success" id="add" type="button" value="Додати дівчину" />
-        <input id="image_url" type="text" />
-        <div id="girls">
-            
+        <input class="btn btn-success" id="getClients" type="button" value="Отримати список клієнтів" />
+        <div class="table-responsive-md py-4">
+            <table class="table table-striped table-hover table-borderless table-primary align-middle ">
+                <thead class="table-light">
+                    <caption>
+                        Clients Info
+                    </caption>
+                    <tr id="table-headder">
+                    </tr>
+                </thead>
+                <tbody class="table-group-divider" id="users-tbody">
+                    <tr class="table-primary">
+                    </tr>
+                    <tr class="table-primary">
+                    </tr>
+                </tbody>
+                <tfoot>
+
+                </tfoot>
+            </table>
         </div>
+        <div id="map" style="height: 500px; width: 100%;"></div>
     </div>
     <script src="/js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
 </body>
+
 </html>
